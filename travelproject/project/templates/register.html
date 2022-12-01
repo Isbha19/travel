@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Registration form </title>
+	<style>
+	.username{
+	  position:relative;
+      left:200px;
+      top:-40px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:465px;
+	  padding:0 22px;
+	  font-size:16px;
+	  display:block;}
+      .main{
+	  background-color:rgb(0,0,0,0.5);
+	  width:800px;
+	  height:600px;
+	  margin:auto;
+	  padding:10px;
+	  }
+	  .name {
+	  margin-left:25px;
+	  margin-top:33px;
+	  width:125px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+
+	  }
+	  .firstname {
+	  position:relative;
+      left:200px;
+      top:-47px;
+      line-height:37px;
+	  border-radius:6px;
+	  padding:0 22px;
+	  size=10px;
+	  font-size:16px;
+	  text-transform:capitalize;
+	  display:block;
+	  }
+	  .secondname {
+	  position:relative;
+      left:470px;
+      text-transform:capitalize;
+      top:-107px;
+      line-height:37px;
+	  border-radius:6px;
+	  padding:0 22px;
+	  font-size:16px;
+	  display:block;
+	  }
+	  .email {
+	  position:relative;
+	  margin-left:25px;
+	  top:-80px;
+	  width:125px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+
+	  }
+	  .emailid{
+	  position:relative;
+      left:200px;
+      top:-125px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:425px;
+	  padding:0 22px;
+	  font-size:16px;
+	  display:block;
+	  }
+
+	  .pwd {
+	  position:relative;
+	  margin-left:25px;
+	  top:-100px;
+	  width:200px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+	 }
+	 .pwdi {
+	  position:relative;
+      left:200px;
+      top:-150px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:300px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+
+	 .confirmpwdi {
+	  position:relative;
+      left:200px;
+      top:-120px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:300px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+	  .submit {
+	  background-color:#3BAF9F;
+	  position:relative;
+	  margin-left:198px;
+	  top:-100px;
+	  width:80px;
+	  color:white;
+	 font-size:17px;
+	 font-weight:100;
+	 display:block; }
+	 .message {
+	  position:relative;
+	  margin-left:150px;
+	  top:-50px;
+	  width:500px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+	 }
+
+	</style>
+
+</head>
+<body style="background-image:url({% static 'images/back.jpg' %});background-size:cover;">
+<h1 style="text-align:center;color:black;font-size:45px;background-color:rgb(0,0,0,0.6);color:white;border-radius:15px 15px 0px 0px;width:800px;margin:auto;padding:10px;">REGISTRATION FORM</h1>
+<div class="main">
+<form method="post">
+
+      {% csrf_token %}
+ <label class="name">Username:</label><br>
+    <input class="username" type="text" name="username" placeholder="enter username"><br>
+     <input class="firstname" type="text" name="firstname" placeholder="first name"><br>
+  <input class="secondname" type="text" name="secondname" placeholder="second name"><br>
+    <label class="email">Email id:</label><br>
+  <input class="emailid" type="email" name="emailid" placeholder="enter your email id"><br>
+
+    <label class="pwd">Password:</label><br>
+  <input class="pwdi" type="password" name="password" placeholder="enter password"><br>
+
+  <input class="confirmpwdi"type="password" name="password1" placeholder="confirm password"><br>
+  <input class="submit" type="submit">
+
+
+
+
+
+</form>
+    {% for i in messages %}
+ <h5 class="message">{{i}}</h5>
+   {% endfor %}
+</div>
+
+</body>
+</html>

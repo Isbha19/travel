@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  <style>
+    .demo {
+	  background-color:rgb(0,0,0,0.5);
+	  width:500px;
+	  margin:auto;
+	  padding:10px;
+	  }
+	  .name {
+	  margin-left:25px;
+	  margin-top:33px;
+	  width:125px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+	 }
+	 .namei  {
+	  position:relative;
+      left:170px;
+      top:-47px;
+      line-height:37px;
+	  border-radius:6px;
+	  padding:0 22px;
+	  size=10px;
+	  font-size:16px;
+	  text-transform:capitalize;
+	  display:block;
+	  }
+	    .pwd {
+	  position:relative;
+	  margin-left:25px;
+	  top:-40px;
+	  width:200px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+	 }
+	 .pwdi {
+	  position:relative;
+      left:170px;
+      top:-87px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:200px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+	   .submit {
+	  position:relative;
+	  margin-left:235px;
+	  top:-50px;
+	  width:80px;
+	  color:black;
+	 font-size:17px;
+	 font-weight:100;
+	 display:block; }
+	  .message {
+	  position:relative;
+	  margin-left:150px;
+	  top:-50px;
+	  width:500px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+	 }
+
+  </style>
+</head>
+<body style="background-image:url({% static 'images/back.jpg' %});background-size:cover;">
+<div class="demo"><form method="POST">
+      {% csrf_token %}
+  <h1 style="text-align:center;color:black;font-size:35px;background-color:rgb(0,0,0,0.6);color:white;border-radius:15px 15px 0px 0px;width:400px;margin:auto;padding:10px;">LOGIN</h1>
+   <label class="name">Username:</label><br>
+<input class="namei" type="text" name="username" placeholder="enter username"><br>
+   <label class="pwd">Password:</label><br>
+  <input class="pwdi" type="password" name="password" placeholder="enter password"><br>
+
+   <input class="submit" type="submit">
+</form>
+     {% for a in messages %}
+ <h5 class="message">{{a}}</h5>
+   {% endfor %}
+  </div>
+
+</body>
+</html>

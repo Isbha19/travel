@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Registration form </title>
+
+	<style>
+      .main{
+	  background-color:rgb(0,0,0,0.5);
+	  width:800px;
+	  height:600px;
+	  margin:auto;
+	  padding:10px;
+	  }
+	  .name {
+	  margin-left:25px;
+	  margin-top:33px;
+	  width:125px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+
+	  }
+	  .firstname {
+	  position:relative;
+      left:200px;
+      top:-47px;
+      line-height:37px;
+	  border-radius:6px;
+	  padding:0 22px;
+	  size=10px;
+	  font-size:16px;
+	  text-transform:capitalize;
+	  display:block;
+	  }
+	  .secondname {
+	  position:relative;
+      left:470px;
+      text-transform:capitalize;
+      top:-107px;
+      line-height:37px;
+	  border-radius:6px;
+	  padding:0 22px;
+	  font-size:16px;
+	  display:block;
+	  }
+	  .email {
+	  position:relative;
+	  margin-left:25px;
+	  top:-80px;
+	  width:125px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+
+	  }
+	  .emailid{
+	  position:relative;
+      left:200px;
+      top:-125px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:425px;
+	  padding:0 22px;
+	  font-size:16px;
+	  display:block;
+	  }
+	  .phone {
+	  position:relative;
+	  margin-left:25px;
+	  top:-100px;
+	  width:200px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+
+	  }
+	  .select {
+	   position:relative;
+      left:200px;
+      top:-150px;
+      size:700px;
+	  border-radius:6px;
+	  height:40px;
+	  width:110px;
+	  padding:0 22px;
+	  font-size:16px;
+	  display:block;
+	  }
+	  .number {
+	  position:relative;
+      left:325px;
+      top:-190px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:300px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+	  .gender {
+	  position:relative;
+	  margin-left:25px;
+	  top:-150px;
+	  width:200px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+
+	  }
+	  .male {
+	  position:relative;
+      left:50px;
+      top:-190px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:300px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+	  .malel {
+	  position:relative;
+	  margin-left:225px;
+	  top:-214px;
+	  width:210px;
+	  color:black;
+	 font-size:20px;
+	 font-weight:100;
+	 display:block;
+
+	  }
+	  .female {
+	  position:relative;
+      left:50px;
+      top:-190px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:300px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+	  .femalel {
+	  position:relative;
+	  margin-left:225px;
+	  top:-214px;
+	  width:210px;
+	  color:black;
+	 font-size:20px;
+	 font-weight:100;
+	 display:block;
+
+	  }
+	  .pwd {
+	  position:relative;
+	  margin-left:25px;
+	  top:-188px;
+	  width:200px;
+	  color:white;
+	 font-size:23px;
+	 font-weight:700;
+	 display:block;
+	 }
+	 .pwdi {
+	  position:relative;
+      left:200px;
+      top:-235px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:300px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+
+	 .confirmpwdi {
+	  position:relative;
+      left:200px;
+      top:-205px;
+      line-height:37px;
+	  border-radius:6px;
+	  width:300px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+	  .cb {
+	  height:20px;
+	  width:20px;
+	  position:relative;
+      left:195px;
+      top:-180px;
+      line-height:37px;
+	  border-radius:6px;
+	  padding:0 22px;
+	  font-size:16px;
+	  }
+	  .statement{
+	  position:relative;
+	  margin-left:235px;
+	  top:-225px;
+	  width:500px;
+	  color:black;
+	 font-size:20px;
+	 font-weight:100;
+	 display:block;
+
+	  }
+	  .submit {
+	  background-color:#3BAF9F;
+	  position:relative;
+	  margin-left:198px;
+	  top:-225px;
+	  width:80px;
+	  color:white;
+	 font-size:17px;
+	 font-weight:100;
+	 display:block; }
+
+	</style>
+
+</head>
+<body style="background-size:cover;">
+<h1 style="text-align:center;color:black;font-size:45px;background-color:rgb(0,0,0,0.6);color:white;border-radius:15px 15px 0px 0px;width:800px;margin:auto;padding:10px;">REGISTRATION FORM</h1>
+<div class="main">
+<form method="post" action="login.html">
+ <label class="name">Username:</label><br>
+     <input class="firstname" type="text" name="first name" placeholder="first name"><br>
+  <input class="secondname" type="text" name="second name" placeholder="second name"><br>
+    <label class="email">Email id:</label><br>
+  <input class="emailid" type="email" name="email" placeholder="enter your email id"><br>
+  <label class="phone">Phone number:</label><br>
+  <select class="select">
+      <option>93</option>
+      <option>355</option>
+      <option>213</option>
+      <option>184</option>
+      <option>325</option>
+      <option>1-284</option>
+  </select>
+  <input class="number" type="text" name="phone number" placeholder="enter your phone number"><br>
+  <label class="gender">Gender:</label><br>
+  <input class="male" type="radio" name="gender">
+    <label class="malel"><b>Male</b></label>
+  <input class="female" type="radio" name="gender"><br>
+    <label class="femalel"><b>Female</b></label>
+
+    <label class="pwd">Password:</label><br>
+  <input class="pwdi" type="password" name="username" placeholder="enter password"><br>
+
+  <input class="confirmpwdi"type="password" name="username" placeholder="confirm password"><br>
+  <input class="cb" type="checkbox" name="username"><br>
+    <p class="statement">I agree to the terms and conditions</p>
+  <input class="submit" type="submit">
+
+
+
+
+
+</form>
+</div>
+</body>
+</html>
